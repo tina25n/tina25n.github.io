@@ -1,19 +1,24 @@
 <script setup>
-import Name from '@/components/Name.vue';
+import Profile from '@/components/Profile.vue';
+import ViewButtons from '@/components/ViewButtons.vue';
+
 </script>
 
 <template>
-  <Name></Name>
-  <v-container>
-    <v-row no-gutters>
+  
+  <v-container color="pink" fill-height fluid>
+    <v-row no-gutters color="blue">
       <v-col>
-        <v-sheet class="pa-2 ma-2">
-          .v-col-auto
+        <v-flex>
+        <v-sheet class="pa-auto ma-auto justify-center align-center">
+            <Profile></Profile>
         </v-sheet>
+        </v-flex>
       </v-col>
+
       <v-col>
-        <v-sheet class="pa-2 ma-2">
-          .v-col-auto
+        <v-sheet>
+          <ViewButtons></ViewButtons>
         </v-sheet>
       </v-col>
 
