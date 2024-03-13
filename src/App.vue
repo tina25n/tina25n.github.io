@@ -10,8 +10,8 @@ export default {
       expand: false,
       menuItems: [
           { title: 'Interests', path: '/interests'},
-          { title: 'Education/Projects', path: '/education'},
-          { title: 'Employment/Volunteer', path: '/employment'}
+          { title: 'Education', path: '/education'},
+          { title: 'Employment', path: '/employment'}
      ]
     }
   },

@@ -4,8 +4,8 @@ export default {
     return {
       menuItems: [
           { title: 'Interests', path: '/interests'},
-          { title: 'Education/Projects', path: '/education'},
-          { title: 'Employment/Volunteer', path: '/employment'}
+          { title: 'Education and Projects', path: '/education'},
+          { title: 'Employment and Volunteer Work', path: '/employment'}
      ]
     }
   },
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-    <v-btn color="pink-lighten-4" block height="190" v-ripple variant='flat'
+    <v-btn color="pink-lighten-4" block height="175" v-ripple variant='flat'
         class="my-3" rounded
         v-for="item in menuItems"
         :key="item.title"
