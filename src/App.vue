@@ -9,8 +9,8 @@ export default {
       pupsrc: puppy,
       expand: false,
       menuItems: [
-          { title: 'Interests', path: '/interests'},
           { title: 'Education', path: '/education'},
+          { title: 'Projects', path: '/projects'},
           { title: 'Employment', path: '/employment'}
      ]
     }
@@ -26,8 +26,8 @@ export default {
         <v-img  @click="expand = !expand" class="mx-auto" :src="pupsrc" width="100"></v-img>
       </template>   
       <v-toolbar-title> 
-        <v-btn variant='plain' to='/' size="large">
-          Tina's Personal Online Resume
+        <v-btn variant='plain' to='/' size="medium">
+          Tina's Online Resume
         </v-btn>
       </v-toolbar-title>
 
@@ -50,7 +50,9 @@ export default {
           height="50"
           color ="pink-lighten-2"
           block
-        ></v-card>
+        >
+        <v-card-text> Hello and welcome to Tina's personal onine profile!</v-card-text>
+      </v-card>
     </v-expand-transition>
 
     <v-content>
