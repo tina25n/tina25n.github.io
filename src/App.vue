@@ -26,8 +26,8 @@ export default {
         <v-img  @click="expand = !expand" class="mx-auto" :src="pupsrc" width="100"></v-img>
       </template>   
       <v-toolbar-title> 
-        <v-btn variant='plain' to='/' size="medium">
-          Tina's Online Resume
+        <v-btn variant='plain' to='/' size="medium"> 
+          Tina's Personal Online Resume
         </v-btn>
       </v-toolbar-title>
 
@@ -51,7 +51,7 @@ export default {
           color ="pink-lighten-2"
           block
         >
-        <v-card-text> Hello and welcome to Tina's personal onine profile!</v-card-text>
+        <v-card-text> Hello and welcome to Tina's personal online profile!</v-card-text>
       </v-card>
     </v-expand-transition>
 

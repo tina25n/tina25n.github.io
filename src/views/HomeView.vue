@@ -5,7 +5,6 @@ import ViewButtons from '@/components/ViewButtons.vue';
 </script>
 
 <template>
-  
   <v-container color="pink" fill-height fluid>
     <v-row no-gutters color="blue">
       <v-col>
