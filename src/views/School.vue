@@ -5,7 +5,6 @@
 <template>
 
   <v-container>
-    <p>Timeline of Tina's Education</p>
   <v-timeline align="start" line-color="pink-lighten-4">
     <v-timeline-item 
       name = "UBC"

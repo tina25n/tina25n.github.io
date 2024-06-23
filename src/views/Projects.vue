@@ -1,22 +1,25 @@
-<script>
-import ProjectList from '@/components/ProjectButtons.vue';
+<script setup>
+import ProjectButtons from '@/components/ProjectButtons.vue';
+import ViewButtons from '@/components/ViewButtons.vue';
 
 </script>
 
 <template>
-    <v-container color="pink" fill-height fluid>
+  <v-container color="pink" fill-height fluid>
     <v-row no-gutters color="blue">
       <v-col>
         <v-flex>
-        <v-sheet class="pa-auto ma-auto justify-center align-center">
-            <ProjectList></ProjectList>
+        <v-sheet class="pa-auto ma-auto justify-center align-center" max-width="600">
+            <ProjectButtons></ProjectButtons>
         </v-sheet>
         </v-flex>
       </v-col>
 
       <v-col>
         <v-sheet>
-          Hi
+          <v-card class="mt-7">
+            HIII
+          </v-card>
         </v-sheet>
       </v-col>
 
