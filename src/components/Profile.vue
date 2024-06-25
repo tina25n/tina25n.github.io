@@ -16,7 +16,7 @@ export default {
 
 <template>
   <v-container>
-  <v-card variant="flat" class="pa-auto ma-auto pt-3 mt-n2" block>
+  <v-card variant="flat" class="pa-auto ma-auto pt-3 mt-n2 mb-n3" block>
     <v-card color="pink-lighten-4" class="pa-3 justify-center align-center mx-auto mb-3" width="320">
       <v-img :src = "Picsrc" width="300" class="justify-center align-center mx-auto" ></v-img>
     </v-card>

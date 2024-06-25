@@ -4,7 +4,7 @@
 
 <template>
 
-  <v-container>
+  <v-container fill-height fluid>
   <v-timeline align="start" line-color="pink-lighten-4">
     <v-timeline-item 
       name = "UBC"
