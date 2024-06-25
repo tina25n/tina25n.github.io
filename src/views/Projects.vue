@@ -1,29 +1,52 @@
-<script setup>
-import ProjectButtons from '@/components/ProjectButtons.vue';
-import ViewButtons from '@/components/ViewButtons.vue';
+<script>
+    export default {
+    data: () => ({
+      tab: null,
+      length: 3,
+      onboarding: 0,
+    }),
+  }
 
 </script>
 
 <template>
-  <v-container color="pink" fill-height fluid>
-    <v-row no-gutters color="blue">
-      <v-col>
-        <v-flex>
-        <v-sheet class="pa-auto ma-auto justify-center align-center" max-width="600">
-            <ProjectButtons></ProjectButtons>
-        </v-sheet>
-        </v-flex>
-      </v-col>
+  <v-card class="ma-10">
+    <v-tabs
+      v-model="tab"
+      bg-color="pink-lighten-2"
+      align-tabs="center"
+    >
+      <v-tab value="P1">Capstone</v-tab>
+      <v-tab value="P2">BeLoved</v-tab>
+      <v-tab value="P3">Furry Friends</v-tab>
+      <v-tab value="P4">Wasteless</v-tab>
+      <v-tab value="P5">Souvenir</v-tab>
 
-      <v-col>
-        <v-sheet>
-          <v-card class="mt-7">
-            HIII
-          </v-card>
-        </v-sheet>
-      </v-col>
+    </v-tabs>
 
-      <v-responsive width="100%"></v-responsive>
-    </v-row>
-  </v-container>
+    <v-card-text>
+      <v-window v-model="tab">
+        <v-window-item value="P1">
+          
+          
+        </v-window-item>
+
+        <v-window-item value="P2">
+          
+        </v-window-item>
+
+        <v-window-item value="P3">
+          
+        </v-window-item>
+
+        <v-window-item value="P4">
+          
+        </v-window-item>
+
+        <v-window-item value="P5">
+          
+        </v-window-item>
+      </v-window>
+    </v-card-text>
+  </v-card>
 </template>

@@ -16,12 +16,13 @@ import ViewButtons from '@/components/ViewButtons.vue';
       </v-col>
 
       <v-col>
-        <v-sheet>
+        <v-sheet class="pr-5 pt-3">
           <ViewButtons></ViewButtons>
         </v-sheet>
       </v-col>
 
       <v-responsive width="100%"></v-responsive>
     </v-row>
+    <p class="text-body-1 text-center bg-pink-lighten-2">You can click on the Dog in the top right corner to download the PDF of my resume and reach out to me via email.</p>
   </v-container>
 </template>
