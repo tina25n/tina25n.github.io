@@ -51,7 +51,7 @@ export default {
           color ="pink-lighten-2"
           block
         >
-        <v-card-text class="text-body-1 text-center"> 
+        <v-card-text class="text-body-1 text-center"> <v-icon icon="mdi-email-heart-outline"></v-icon>
           The best way to contact me is by sending an email to nguyen.tina25@yahoo.com. Until then, you can save and review my resume here.
           <v-btn style="float: right" density="compact"> Download Resume </v-btn>
         </v-card-text>
