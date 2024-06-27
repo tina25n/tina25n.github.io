@@ -1,6 +1,7 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
 import puppy from '@/assets/images/puppy.png'
+import TN_Resume from '@/assets/images/TN_Resume_2023_Public.pdf'
 
 export default {
   name: "App",
@@ -8,6 +9,7 @@ export default {
     return {
       pupsrc: puppy,
       expand: false,
+      resume: TN_Resume,
       menuItems: [
           { title: 'Education', path: '/education'},
           { title: 'Projects', path: '/projects'},
@@ -51,9 +53,10 @@ export default {
           color ="pink-lighten-2"
           block
         >
-        <v-card-text class="text-body-1 text-center"> <v-icon icon="mdi-email-heart-outline"></v-icon>
+        <v-card-text class="text-body-2 text-center"> <v-icon icon="mdi-email-heart-outline"></v-icon>
           The best way to contact me is by sending an email to nguyen.tina25@yahoo.com. Until then, you can save and review my resume here.
-          <v-btn style="float: right" density="compact"> Download Resume </v-btn>
+          <a :href ="resume" download ="Tina_N_Resume.pdf">
+          <v-btn style="float: right" density="compact" > Download Resume </v-btn> </a>
         </v-card-text>
       </v-card>
     </v-expand-transition>

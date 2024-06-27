@@ -24,13 +24,12 @@
     <v-card-text>
       <v-window v-model="tab">
         <v-window-item value="W1">
-          Tina completed the Applied science Co-op program during her time at UBC. 
           <v-window v-model="onboarding" show-arrows >
             <v-window-item name="Toch">
                 <v-card max-height="500"  class="mx-10 my-5">
                     <v-banner bg-color = "pink-lighten-4" sticky>
                         <template v-slot:actions>
-                            <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
+                            <v-text class="text-body-1 mt-n15">May 2024</v-text></template>
                         <v-banner-text class ="text-h6 mt-n2" > 1
                         <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
                         </v-banner-text>
@@ -44,7 +43,7 @@
                 <v-card max-height="500"  class="mx-10 my-5">
                     <v-banner bg-color = "pink-lighten-4" sticky>
                         <template v-slot:actions>
-                            <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
+                            <v-text class="text-body-1 mt-n15">May 2024</v-text></template>
                         <v-banner-text class ="text-h6 mt-n2" > 2
                         <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
                         </v-banner-text>
@@ -57,7 +56,7 @@
                 <v-card max-height="500"  class="mx-10 my-5">
                     <v-banner bg-color = "pink-lighten-4" sticky>
                         <template v-slot:actions>
-                            <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
+                            <v-text class="text-body-1 mt-n15">May 2024</v-text></template>
                         <v-banner-text class ="text-h6 mt-n2" > 3
                         <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
                         </v-banner-text>
@@ -66,6 +65,7 @@
                     </v-card-text>
                 </v-card>
             </v-window-item>
+            <v-card-text class="text-body-1 text-center">Tina completed the Applied science Co-op program during her time at UBC. </v-card-text>
           </v-window>
         </v-window-item>
 
