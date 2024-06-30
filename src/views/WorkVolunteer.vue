@@ -65,7 +65,7 @@
                     </v-card-text>
                 </v-card>
             </v-window-item>
-            <v-card-text class="text-body-1 text-center">Tina completed the Applied science Co-op program during her time at UBC. </v-card-text>
+            <v-card-text class="text-body-1 text-center">Tina completed the Applied Science Co-op program during her time at UBC. </v-card-text>
           </v-window>
         </v-window-item>
 
