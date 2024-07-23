@@ -1,5 +1,5 @@
 <script>
-import Pic from '@/assets/images/Profile.jpg'
+import Pic from '@/assets/images/profile.jpg'
 
 export default {
     data() {

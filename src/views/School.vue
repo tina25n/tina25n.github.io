@@ -27,11 +27,39 @@ export default {
           {hkucode:'COMP 3314', title: 'Machine Learning', ubccode: 'CPSC 340'},
           {hkucode:'COMP 3366', title: 'Quantum Algorithms and Computer Architecture', ubccode: 'ELEC 571S'}
       ],
+      kpuCourses: [
+        {kpucode:'FINA 1100', title: 'Introduction to Drawing', ubccode: 'FINA1ST', term: 'Fall 2016'},
+        {kpucode:'PHIL 1150', title: 'Introduction to Formal Logic', ubccode: 'PHIL120', term: 'Fall 2017'},
+      ],
+      pmExtra: [
+        {name: 'REACH program', desc: 'Employment Readiness and Leadership Development Program', time: '2017-2018',},
+        {name: 'Princess Margaret Vocal arts and Board Council', desc: "School's Choir and Acapella Group", time: '2015-2018'},
+        {name: 'Princess Margaret Concert Band', desc: 'Flutist in School Band', time: '2016-2018'},
+        {name: 'Princess Margaret A-team', desc: "Princess Margaret's local volunteer group for events", time: '2016-2018'},
+        {name: 'Princess Margaret Student Council', desc:'Student Organization for planning school events and fundraising', time: '2016-2018'},
+        {name: 'Code Blue', desc: 'Physical Activity and Training Program Led by RCMP Officers to Build Strength, Confidence and Self-Discipline ', time: '2017-2018'},
+        {name: 'Yo-Bro/Yo-Girl', desc: 'Self-Defense and Mentorship Program', time: '2017-2018'},
+        {name: 'Science Co-op', desc: 'Integrated Volunteer Work at 2 Senior Homes ', time: '2017'},
+        {name: 'Humanities Co-op', desc: 'Integrated Volunteer Work at 2 Establishments', time: '2016'},
+
+
+      ],
+      pmAwards: [
+      {name: 'Princess Margaret Valedictorian', time: '2018'},
+      {name: 'Top Academic Student', time: '2018'},
+      {name: 'Schulich Leader Nominee', time: '2018'},
+      {name: 'BC Excellence Scholarship', time: '2018'},
+      {name: 'Vietnamese Cultural Bursary', time: '2018'},
+      {name: 'District Authority Scholarship in International Languages', time: '2018'},
+      {name: 'Honour Roll (4.0 GPA)', time: '2014-2018'},
+
+      ],
       cpsclink: 'https://vancouver.calendar.ubc.ca/course-descriptions/subject/cpscv',
       englink: 'https://ece.ubc.ca/undergraduates/programs/biomedical-engineering-option/',
       cielink: 'https://experience.apsc.ubc.ca/cie/student-experience/student-stories',
       duallink: 'https://www.kpu.ca/dual-credit-and-concurrent-studies',
-      explorelink: 'https://englishfrench.ca/explore/',
+      lclink: 'https://www.collegelacite.ca/explore',
+      udemlink: 'https://englishfrench.ca/explore/'
 
     }),
   }
@@ -87,7 +115,6 @@ export default {
         <tbody>
         <tr
         v-for="item in ubcCPSCCourses"
-        :key="item.code"
         >
         <td :to="item.link">{{ item.code }}</td>
         <td :to="item.link">{{ item.title }}</td>
@@ -117,7 +144,6 @@ export default {
         <tbody>
         <tr
         v-for="item in ubcEngCourses"
-        :key="item.code"
         >
         <td>{{ item.code }}</td>
         <td>{{ item.title }}</td>
@@ -177,7 +203,6 @@ export default {
         <tbody>
         <tr
         v-for="item in hkuCourses"
-        :key="item.code"
         >
         <td>{{ item.hkucode }}</td>
         <td>{{ item.title }}</td>
@@ -200,13 +225,19 @@ export default {
     <v-banner bg-color = "pink-lighten-2" sticky max-height="100" rounded>
           <template v-slot:actions>
             <v-text class="text-body-1 mt-n10">Summer 2023</v-text></template>
-          <v-banner-text class ="text-h6 mt-n2" > College La Cite
+          <v-banner-text class ="text-h6 mt-n2" > Coll&egravege La Cit&eacute
             <v-banner-text class="text-body-2"> Ottawa, ON </v-banner-text>
           </v-banner-text>
         </v-banner>
     <v-card max-height="150"  class="overflow-y-auto">
         <v-card-text class="bg-white text-body-1 text--primary">
-          
+          <v-list-item  :href="lclink" target="_blank">
+            <v-list-item-title :to="lclink" class="text-center">
+              Taken as part of the Explore Program
+              <v-icon icon="mdi-open-in-new"></v-icon> 
+            </v-list-item-title>
+          </v-list-item>
+          <b>French Class Level:</b> Intermediate
         </v-card-text>
       </v-card>
     </v-timeline-item>
@@ -221,14 +252,23 @@ export default {
     <v-banner bg-color = "pink-lighten-2" sticky max-height="100" rounded>
           <template v-slot:actions>
             <v-text class="text-body-1 mt-n10">Summer 2018</v-text></template>
-          <v-banner-text class ="text-h6 mt-n2" > Universite de Montreal
-            <v-banner-text class="text-body-2"> Montreal, QC </v-banner-text>
+          <v-banner-text class ="text-h6 mt-n2" > Universit&eacute de Montr&eacuteal
+            <v-banner-text class="text-body-2"> Montr&eacuteal, QC </v-banner-text>
           </v-banner-text>
         </v-banner>
 
-    <v-card max-height="150" class="overflow-y-auto">
+        <v-card max-height="150" class="overflow-y-auto">
         <v-card-text class="bg-white text-body-1 text--primary">
-    
+          
+          <v-list-item  :href="udemlink" target="_blank">
+            <v-list-item-title :to="udemlink" class="text-center">
+              Taken as part of the Explore Program
+              <v-icon icon="mdi-open-in-new"></v-icon> 
+            </v-list-item-title>
+          </v-list-item>
+          Please note that the program at the Universit&eacute de Montr&eacuteal has since been suspended. <br>
+          <b>French Class Level:</b> 3 (Intermediate)
+          
         </v-card-text>
       </v-card>
     </v-timeline-item>
@@ -249,8 +289,42 @@ export default {
         </v-banner>
     <v-card max-height="200" class="overflow-y-auto">
         <v-card-text class="bg-white text-body-1 text--primary">
-          FINA 1100: Introduction to Drawing -> FINA1ST
-          PHIL 1150: Introduction to Formal Logic  -> PHIL120
+          <v-list-item  :href="duallink" target="_blank">
+            <v-list-item-title :to="duallink" class="text-center">
+              Taken as a Dual Credit Student
+              <v-icon icon="mdi-open-in-new"></v-icon> 
+            </v-list-item-title>
+          </v-list-item>
+        As a dual credit student, the courses taken at Kwantlen Polytechnic University were completed during high school in my 10th and 11th year. <br>
+        <b class ="mt-2">Coursework: </b>  
+        <v-table class = "text-body-2" density="compact">  
+        <thead>
+        <tr>
+        <th class="text-left">
+          KPU Course Code
+        </th>
+        <th class="text-left">
+          Title
+        </th>
+        <th class="text-left">
+          UBC Course Code
+        </th>
+        <th class="text-left">
+          Term Taken
+        </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr
+        v-for="item in kpuCourses"
+        >
+        <td>{{ item.kpucode }}</td>
+        <td>{{ item.title }}</td>
+        <td>{{ item.ubccode }}</td>
+        <td>{{ item.term }}</td>
+        </tr>
+        </tbody>
+      </v-table>
         </v-card-text>
       </v-card>
     </v-timeline-item>
@@ -271,7 +345,47 @@ export default {
         </v-banner>
     <v-card max-height="200"class="overflow-y-auto">
         <v-card-text class="bg-white text-body-1 text--primary">
-          <b>Extracurricular Activities</b>  
+          <b>Awards and Accomplishments:</b>  <br>
+        <v-table class = "text-body-2" density="compact">  
+        <thead>
+        <tr>
+        <th class="text-left">
+          Program Name
+        </th>
+        <th class="text-left">
+        </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="item in pmAwards">
+          <td>{{ item.name }}</td>
+          <td>{{ item.time }}</td>
+        </tr>
+        </tbody>
+        </v-table>
+          <b>Extracurricular Activities:</b>  <br>
+        <v-table class = "text-body-2" density="compact">  
+        <thead>
+        <tr>
+        <th class="text-left">
+          Program Name
+        </th>
+        <th class="text-left">
+          Description
+        </th>
+        <th class="text-left">
+        </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="item in pmExtra">
+          <td>{{ item.name }}</td>
+          <td>{{ item.desc }}</td>
+          <td>{{ item.time }}</td>
+        </tr>
+        </tbody>
+        </v-table>
+         
         </v-card-text>
       </v-card>
       
