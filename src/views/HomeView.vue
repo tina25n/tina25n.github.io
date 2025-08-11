@@ -9,9 +9,9 @@ import ViewButtons from '@/components/ViewButtons.vue';
     <v-row no-gutters color="blue">
       <v-col>
         <v-flex>
-        <v-sheet class="pa-auto ma-auto justify-center align-center">
+          <v-sheet class="pa-auto ma-auto justify-center align-center">
             <Profile></Profile>
-        </v-sheet>
+          </v-sheet>
         </v-flex>
       </v-col>
 
@@ -23,6 +23,11 @@ import ViewButtons from '@/components/ViewButtons.vue';
 
       <v-responsive width="100%"></v-responsive>
     </v-row>
-    <p class="text-body-1 text-center bg-pink-lighten-2">You can click on the Dog in the top right corner to download the PDF of my resume and reach out to me via email.</p>
+    <p class="text-body-1 text-center bg-pink-lighten-2">You can click on the Dog in the top right corner to download
+      the PDF of my resume and reach out to me via email.</p>
+
   </v-container>
+
+
+
 </template>

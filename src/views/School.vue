@@ -69,7 +69,7 @@ export default {
 
   <v-container fill-height fluid>
     <v-card flat>
-    <v-card-text class="text-center text-h6 font-weight-black">Education Timeline</v-card-text>
+    <v-card-text class="text-center text-h5">Education Timeline</v-card-text>
     </v-card>
   <v-timeline align="start" line-color="pink-lighten-4">
     <v-timeline-item 
@@ -79,10 +79,10 @@ export default {
       size="large"
       icon = "mdi-school"
     >
-    <v-banner bg-color = "pink-lighten-2" sticky max-height="100" rounded>
+    <v-banner bg-color = "pink-lighten-2" sticky max-height="100" min-height="100" rounded>
           <template v-slot:actions>
             <v-text class="text-body-1 mt-n10">May 2024</v-text></template>
-          <v-banner-text class ="text-h6 mt-n2" > University of British Columbia 
+          <v-banner-text class ="text-h6 mt-n2"> University of British Columbia 
             <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
           </v-banner-text>
         </v-banner>
@@ -155,6 +155,11 @@ export default {
 
         </v-card-text>
       </v-card>
+
+      <template v-slot:opposite>
+        Opposite content
+      </template>
+
     </v-timeline-item>
 
     <v-timeline-item
@@ -295,7 +300,8 @@ export default {
               <v-icon icon="mdi-open-in-new"></v-icon> 
             </v-list-item-title>
           </v-list-item>
-        As a dual credit student, the courses taken at Kwantlen Polytechnic University were completed during high school in my 10th and 11th year. <br>
+          <div> As a dual credit student, the courses taken at Kwantlen Polytechnic University 
+            were completed during high school in my 10th and 11th year. </div><br>
         <b class ="mt-2">Coursework: </b>  
         <v-table class = "text-body-2" density="compact">  
         <thead>
@@ -348,13 +354,6 @@ export default {
           <b>Awards and Accomplishments:</b>  <br>
         <v-table class = "text-body-2" density="compact">  
         <thead>
-        <tr>
-        <th class="text-left">
-          Program Name
-        </th>
-        <th class="text-left">
-        </th>
-        </tr>
         </thead>
         <tbody>
         <tr v-for="item in pmAwards">

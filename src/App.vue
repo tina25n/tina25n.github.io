@@ -12,9 +12,24 @@ export default {
       resume: TN_Resume,
       menuItems: [
           { title: 'Education', path: '/education'},
+          { title: 'Employment', path: '/employment'},
           { title: 'Projects', path: '/projects'},
-          { title: 'Employment', path: '/employment'}
-     ]
+          { title: 'Test', path: '/test'}
+      ],
+      width: window.innerWidth,
+      height: window.innerHeight,
+    }
+  },
+  mounted() {
+    window.addEventListener("resize", this.onResize);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.myEventHandler);
+  },
+  methods: {
+    onResize(e) {
+      this.width = window.innerWidth;
+      this.height = window.innerHeight;
     }
   },
 };
@@ -28,9 +43,12 @@ export default {
         <v-img  @click="expand = !expand" class="mx-auto" :src="pupsrc" width="100"></v-img>
       </template>   
       <v-toolbar-title> 
-        <v-btn variant='plain' to='/' size="medium"> 
-          Tina's Personal Online Resume
-        </v-btn>
+          <v-btn variant='plain' to='/' size="medium" v-if="width >= 1100"> 
+          Tina's Personal Website
+          </v-btn>
+          <v-btn variant='plain' to='/' size="medium" v-else-if="width < 1100 "> 
+          Tina
+          </v-btn>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -45,21 +63,23 @@ export default {
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
+
     <v-expand-transition>
         <v-card
           v-show="expand"
           class="mx-15"
-          height="50"
           color ="pink-lighten-2"
           block
         >
-        <v-card-text class="text-body-2 text-center"> <v-icon icon="mdi-email-heart-outline"></v-icon>
+        <v-card-text class="text-body-2 text-left"> <v-icon icon="mdi-email-heart-outline"></v-icon>
           The best way to contact me is by sending an email to nguyen.tina25@yahoo.com. Until then, you can save and review my resume here.
           <a :href ="resume" download ="Tina_N_Resume.pdf">
-          <v-btn style="float: right" density="compact" > Download Resume </v-btn> </a>
+          <v-btn style="float: right" size="small" class = "mb-2 mt=1" > Download Resume </v-btn> </a>
         </v-card-text>
       </v-card>
     </v-expand-transition>
+
+    
 
     <v-content>
       <router-view></router-view>

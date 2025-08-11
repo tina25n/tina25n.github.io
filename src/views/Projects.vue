@@ -1,14 +1,138 @@
 <script>
-    export default {
-    data: () => ({
-      tab: null,
-      length: 3,
-      onboarding: 0,
-    }),
-  }
+export default {
+  data: () => ({
+  }),
+}
 
 </script>
 
+<!--Need to do a v-for for this one-->
+<template>
+  <v-window>
+    <v-row no-gutters>
+      <v-col>
+        <v-sheet class="mt-5">
+          <v-card max-height="500" class=" mx-4">
+            <v-banner bg-color="pink-lighten-4" sticky>
+              <template v-slot:actions>
+                <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
+              <v-banner-text class="text-h6 mt-n2"> 3
+                <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
+              </v-banner-text>
+            </v-banner>
+            <v-card-text class="bg-white text--primary">
+
+            </v-card-text>
+          </v-card>
+        </v-sheet>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-sheet class="my-2">
+          <v-card max-height="500" class=" ml-4">
+            <v-banner bg-color="pink-lighten-4" sticky>
+              <template v-slot:actions>
+                <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
+              <v-banner-text class="text-h6 mt-n2"> 3
+                <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
+              </v-banner-text>
+            </v-banner>
+            <v-card-text class="bg-white text--primary">
+
+            </v-card-text>
+          </v-card>
+        </v-sheet>
+      </v-col>
+      <v-col>
+        <v-sheet class="my-2">
+          <v-card max-height="500" class="mx-2">
+            <v-banner bg-color="pink-lighten-4" sticky>
+              <template v-slot:actions>
+                <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
+              <v-banner-text class="text-h6 mt-n2"> 3
+                <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
+              </v-banner-text>
+            </v-banner>
+            <v-card-text class="bg-white text--primary">
+
+            </v-card-text>
+          </v-card>
+        </v-sheet>
+      </v-col>
+
+      <v-col>
+        <v-sheet class="my-2">
+          <v-card max-height="500" class="mr-4">
+            <v-banner bg-color="pink-lighten-4" sticky>
+              <template v-slot:actions>
+                <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
+              <v-banner-text class="text-h6 mt-n2"> 3
+                <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
+              </v-banner-text>
+            </v-banner>
+            <v-card-text class="bg-white text--primary">
+
+            </v-card-text>
+          </v-card>
+        </v-sheet>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-sheet class="my-2">
+          <v-card max-height="500" class=" ml-4">
+            <v-banner bg-color="pink-lighten-4" sticky>
+              <template v-slot:actions>
+                <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
+              <v-banner-text class="text-h6 mt-n2"> 3
+                <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
+              </v-banner-text>
+            </v-banner>
+            <v-card-text class="bg-white text--primary">
+
+            </v-card-text>
+          </v-card>
+        </v-sheet>
+      </v-col>
+      <v-col>
+        <v-sheet class="my-2">
+          <v-card max-height="500" class="mx-2">
+            <v-banner bg-color="pink-lighten-4" sticky>
+              <template v-slot:actions>
+                <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
+              <v-banner-text class="text-h6 mt-n2"> 3
+                <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
+              </v-banner-text>
+            </v-banner>
+            <v-card-text class="bg-white text--primary">
+
+            </v-card-text>
+          </v-card>
+        </v-sheet>
+      </v-col>
+
+      <v-col>
+        <v-sheet class="my-2">
+          <v-card max-height="500" class="mr-4">
+            <v-banner bg-color="pink-lighten-4" sticky>
+              <template v-slot:actions>
+                <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
+              <v-banner-text class="text-h6 mt-n2"> 3
+                <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
+              </v-banner-text>
+            </v-banner>
+            <v-card-text class="bg-white text--primary">
+
+            </v-card-text>
+          </v-card>
+        </v-sheet>
+      </v-col>
+    </v-row>
+  </v-window>
+</template>
+
+<!--
 <template>
   <v-card class="ma-10">
     <v-tabs
@@ -27,18 +151,7 @@
     <v-card-text>
       <v-window v-model="tab">
         <v-window-item value="P1">
-          <v-card max-height="500"  class="mx-10 my-5">
-            <v-banner bg-color = "pink-lighten-4" sticky>
-              <template v-slot:actions>
-                <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
-                  <v-banner-text class ="text-h6 mt-n2" > 3
-                    <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
-                  </v-banner-text>
-            </v-banner>
-            <v-card-text class="bg-white text--primary">
-            
-            </v-card-text>
-          </v-card>
+          
           
         </v-window-item>
 
@@ -61,3 +174,4 @@
     </v-card-text>
   </v-card>
 </template>
+-->
