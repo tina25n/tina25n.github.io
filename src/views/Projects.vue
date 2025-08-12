@@ -13,7 +13,7 @@ export default {
       <v-col>
         <v-sheet class="mt-5">
           <v-card max-height="500" class=" mx-4">
-            <v-banner bg-color="pink-lighten-4" sticky>
+            <v-banner bg-color="pink-lighten-2" sticky>
               <template v-slot:actions>
                 <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
               <v-banner-text class="text-h6 mt-n2"> 3
@@ -31,7 +31,7 @@ export default {
       <v-col>
         <v-sheet class="my-2">
           <v-card max-height="500" class=" ml-4">
-            <v-banner bg-color="pink-lighten-4" sticky>
+            <v-banner bg-color="pink-lighten-2" sticky>
               <template v-slot:actions>
                 <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
               <v-banner-text class="text-h6 mt-n2"> 3
@@ -64,7 +64,7 @@ export default {
       <v-col>
         <v-sheet class="my-2">
           <v-card max-height="500" class="mr-4">
-            <v-banner bg-color="pink-lighten-4" sticky>
+            <v-banner bg-color="pink-lighten-2" sticky>
               <template v-slot:actions>
                 <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
               <v-banner-text class="text-h6 mt-n2"> 3
@@ -98,7 +98,7 @@ export default {
       <v-col>
         <v-sheet class="my-2">
           <v-card max-height="500" class="mx-2">
-            <v-banner bg-color="pink-lighten-4" sticky>
+            <v-banner bg-color="pink-lighten-2" sticky>
               <template v-slot:actions>
                 <v-text class="text-body-1 mt-n5 mb-5">May 2024</v-text></template>
               <v-banner-text class="text-h6 mt-n2"> 3
