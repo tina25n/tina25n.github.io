@@ -1,6 +1,6 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
-import puppy from '@/assets/images/puppy.png'
+import puppy from '@/assets/images/daschund.png'
 import TN_Resume from '@/assets/images/TN_Resume_2023_Public.pdf'
 
 export default {

@@ -105,7 +105,8 @@ export default {
                                 <v-icon icon="mdi-open-in-new" class="text-h4 font-weight-bold" :to=teluslink></v-icon>
                             </v-list-item>
                         </template>
-                        <v-banner-text class="text-h6 font-weight-bold"> Telus Digital (formerly Telus International)
+                        <v-banner-text class="text-h6 font-weight-bold"> Telus Digital (Formerly known as Telus
+                            International)
                             <v-banner-text class="text-body-1"> Surrey, BC </v-banner-text>
                         </v-banner-text>
                     </v-banner>

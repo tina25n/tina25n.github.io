@@ -1,6 +1,8 @@
 <script setup>
 import Profile from '@/components/Profile.vue';
 import ViewButtons from '@/components/ViewButtons.vue';
+import corner from '@/assets/images/corner.png'
+
 
 </script>
 
@@ -19,6 +21,7 @@ import ViewButtons from '@/components/ViewButtons.vue';
         <v-sheet class="pr-5 pt-3">
           <ViewButtons></ViewButtons>
         </v-sheet>
+        <v-img class="ml-auto" :src=corner width ="250"></v-img>
       </v-col>
 
       <v-responsive width="100%"></v-responsive>

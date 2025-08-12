@@ -31,7 +31,7 @@ export default {
                     <v-card-text class="text-h6">
                         <v-row>
                             <v-col class="text-decoration-underline">
-                                Artificial Intelligence in Medical Imaging (AIMI) Group
+                                Artificial Intelligence in Medical Imaging (AIMI) Lab
                             </v-col>
                             <v-col class="text-right">
                                 July 2025 - December 2025

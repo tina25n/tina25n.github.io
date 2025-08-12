@@ -1,6 +1,13 @@
 <script>
+import upshiba from '@/assets/images/up_shiba.png'
+import sheep from '@/assets/images/sheep.png'
+import rottie from '@/assets/images/rottie.png'
+
 export default {
   data: () => ({
+    upshibasrc: upshiba,
+    sheepsrc: sheep,
+    rottiesrc: rottie,
     ubcCPSCCourses: [
       { code: 'CPSC 210', title: 'Software Construction' },
       { code: 'CPSC 221', title: 'Basic Algorithms and Data Structures' },
@@ -69,7 +76,7 @@ export default {
 
   <v-container fill-height fluid>
     <v-card flat>
-      <v-card-text class="text-center text-h5">Education Timeline</v-card-text>
+      <v-card-text class="text-center text-h5 font-weight-bold">Education Timeline</v-card-text>
     </v-card>
     <v-timeline align="start" line-color="pink-lighten-4">
       <v-timeline-item name="UBC" dot-color="pink-lighten-2" fill-dot size="large" icon="mdi-school">
@@ -81,7 +88,6 @@ export default {
           </v-banner-text>
         </v-banner>
         <v-card max-height="300" class="overflow-y-auto">
-
           <v-card-text class="bg-white text-body-1 text--primary">
             <b> Degree: </b> Bachelor of Applied Science <i>(BAsc)</i> <br>
             <b> Major: </b> Electrical Engineering, Biomedical Option <br>
@@ -110,12 +116,10 @@ export default {
                     <tr v-for="item in ubcCPSCCourses">
                       <td :to="item.link">{{ item.code }}</td>
                       <td :to="item.link">{{ item.title }}</td>
-
                     </tr>
                   </tbody>
                 </v-table>
               </v-col>
-
               <v-col>
                 <v-list-item :href="englink" target="_blank">
                   <v-list-item-title :to="englink" class="text-center">Engineering
@@ -142,16 +146,14 @@ export default {
                 </v-table>
               </v-col>
             </v-row>
-
           </v-card-text>
         </v-card>
-
         <template v-slot:opposite>
-          Opposite content
+            <div class="mt-16 pt-16">
+            <v-img class="mt-5 pt-16 mb-n16" :src="sheepsrc" width="200" ></v-img>
+            </div>
         </template>
-
       </v-timeline-item>
-
       <v-timeline-item name="HKU" dot-color="pink-lighten-2" fill-dot size="large" icon="mdi-airplane-takeoff">
         <v-banner bg-color="pink-lighten-2" sticky max-height="100" rounded>
           <template v-slot:actions>
@@ -161,7 +163,6 @@ export default {
           </v-banner-text>
         </v-banner>
         <v-card max-height="200" class="overflow-y-auto">
-
           <v-card-text class="bg-white text-body-1 text--primary">
             <v-list-item :href="cielink" target="_blank">
               <v-list-item-title :to="cielink" class="text-center">
@@ -169,7 +170,6 @@ export default {
                 <v-icon icon="mdi-open-in-new"></v-icon>
               </v-list-item-title>
             </v-list-item>
-
             <b> Major: </b> Biomedical Engineering <br>
             <b> Awards: </b> <br>
             Chan Tat Chee Memorial Education Abroad Scholarship <br>
@@ -199,9 +199,12 @@ export default {
             </v-table>
           </v-card-text>
         </v-card>
-
+        <template v-slot:opposite>
+            <div class="mt-16 pt-16 ">
+            <v-img class="ml-auto mt-6 mb-n16" :src="rottiesrc" width="200" ></v-img>
+            </div>
+        </template>
       </v-timeline-item>
-
       <v-timeline-item name="lacite" dot-color="pink-lighten-2" fill-dot size="large" icon="mdi-translate-variant">
         <v-banner bg-color="pink-lighten-2" sticky max-height="100" rounded>
           <template v-slot:actions>
@@ -222,7 +225,6 @@ export default {
           </v-card-text>
         </v-card>
       </v-timeline-item>
-
       <v-timeline-item name="udem" dot-color="pink-lighten-2" fill-dot size="large" icon="mdi-translate-variant">
         <v-banner bg-color="pink-lighten-2" sticky max-height="100" rounded>
           <template v-slot:actions>
@@ -231,10 +233,8 @@ export default {
             <v-banner-text class="text-body-2"> Montr&eacuteal, QC </v-banner-text>
           </v-banner-text>
         </v-banner>
-
         <v-card max-height="150" class="overflow-y-auto">
           <v-card-text class="bg-white text-body-1 text--primary">
-
             <v-list-item :href="udemlink" target="_blank">
               <v-list-item-title :to="udemlink" class="text-center">
                 Taken as part of the Explore Program
@@ -243,11 +243,9 @@ export default {
             </v-list-item>
             Please note that the program at the Universit&eacute de Montr&eacuteal has since been suspended. <br>
             <b>French Class Level:</b> 3 (Intermediate)
-
           </v-card-text>
         </v-card>
       </v-timeline-item>
-
       <v-timeline-item name="kpu" dot-color="pink-lighten-2" fill-dot size="large" icon="mdi-chair-school">
         <v-banner bg-color="pink-lighten-2" sticky max-height="200">
           <template v-slot:actions>
@@ -296,7 +294,6 @@ export default {
           </v-card-text>
         </v-card>
       </v-timeline-item>
-
       <v-timeline-item name="pmss" dot-color="pink-lighten-2" fill-dot size="large" icon="mdi-school">
         <v-banner bg-color="pink-lighten-2" sticky max-height="100">
           <template v-slot:actions>
@@ -340,10 +337,13 @@ export default {
                 </tr>
               </tbody>
             </v-table>
-
           </v-card-text>
         </v-card>
-
+               <template v-slot:opposite fill-width>
+            <v-sheet class="mt-10 ml-auto" >
+            <v-img class="mt-5 mb-n16" :src="upshibasrc" width="250" ></v-img>
+            </v-sheet>
+        </template>
       </v-timeline-item>
     </v-timeline>
   </v-container>
