@@ -1,7 +1,7 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
 import puppy from '@/assets/images/daschund.png'
-import TN_Resume from '@/assets/images/TN_Resume_2023_Public.pdf'
+import TN_Resume from '@/assets/images/Tina_Nguyen_2025.pdf'
 
 export default {
   name: "App",
