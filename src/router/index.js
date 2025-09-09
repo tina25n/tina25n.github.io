@@ -28,11 +28,6 @@ const router = createRouter({
       name: "employment",
       component: Work,
     },
-    {
-      path: "/test",
-      name: "test",
-      component: Test,
-    },
   ],
 });
 
