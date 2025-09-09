@@ -8,7 +8,7 @@ import Poster from '@/components/Poster.vue';
   <v-container>
     <v-row no-gutters>
       <v-col>
-          <v-card class=" mx-4 mt-5">
+          <v-card class="mt-5 mx-auto">
             <v-banner bg-color="pink-lighten-2" sticky>
               <template v-slot:actions>
                 <v-text class="text-body-1 mt-n5 mb-5">September 2024 - May 2024</v-text></template>
@@ -16,7 +16,7 @@ import Poster from '@/components/Poster.vue';
                 <v-banner-text class="text-body-2"> Vancouver, BC </v-banner-text>
               </v-banner-text>
             </v-banner>
-              <v-card-text class="text-body-1 text-center"> As part of my capstone, I served as the project manager for the development of a wearable
+              <v-card-text class="text-body-1 text-center mx-5"> As part of my capstone, I served as the project manager for the development of a wearable
                 health status
                 monitoring system designed for use in hospital waiting rooms. In this role, I worked on the firmware
                 development,

@@ -14,7 +14,6 @@ export default {
           { title: 'Education', path: '/education'},
           { title: 'Employment', path: '/employment'},
           { title: 'Projects', path: '/projects'},
-          { title: 'Test', path: '/test'}
       ],
       width: window.innerWidth,
       height: window.innerHeight,
